@@ -18,10 +18,7 @@ export default function Input() {
     const [postLoading, setPostLoading] = useState(false);
     const { user, isSignedIn, isLoaded } = useUser();// user data comes from Clerk
   
-    if (!isSignedIn || !isLoaded) {
-      return null;
-    }
-
+  
     const handleSubmit = async () => {
 
         setPostLoading(true);
@@ -34,11 +31,11 @@ export default function Input() {
           // sending information to the body
           body: JSON.stringify({
             userMongoId: user.publicMetadata.userMongoId,
-            name: user.fullName,
-            username: user.username,
+            //name: user.fullName,
+            //username: user.username,
             text,
             //text: user.text,
-            profileImg: user.imageUrl,
+            //profileImg: user.imageUrl,
             //image: imageFileUrl,
           }),
         });
@@ -48,6 +45,11 @@ export default function Input() {
         //setImageFileUrl(null);
         location.reload();
       };
+
+      if (!isSignedIn || !isLoaded) {
+        return null;
+      }
+  
 
     return (
       <div className='flex border-b border-gray-200 p-3 space-x-3 w-full'>

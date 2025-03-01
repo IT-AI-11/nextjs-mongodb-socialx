@@ -10,7 +10,7 @@ import { connect } from '../../../../lib/mongodb/mongoose.js';
 import { currentUser } from '@clerk/nextjs/server';// from Clerk current authenticated user who created the post
 
 export const POST = async (req) => {
-    
+
   const user = await currentUser();
 
   try {
@@ -29,10 +29,10 @@ export const POST = async (req) => {
     }
     const newPost = await Post.create({
       user: data.userMongoId,
-      name: data.name,
-      username: data.username,
+      //name: data.name,
+      //username: data.username,
       text: data.text,
-      profileImg: data.profileImg,
+      //profileImg: data.profileImg,
       //image: data.image,
     });
     await newPost.save();
