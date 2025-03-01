@@ -4,14 +4,17 @@
 import Link from 'next/link';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HiHome } from 'react-icons/hi';
+import MiniProfile from './MiniProfile';
 
 import {
     SignedIn,
     SignedOut,
     SignInButton,
     SignOutButton,
-    UserButton
+    //UserButton
 } from '@clerk/nextjs';
+
+
 
 
 export default function LeftSidebar() {
@@ -43,8 +46,8 @@ export default function LeftSidebar() {
                 </div>
 
                 <SignedIn>
-                   {/* <MiniProfile /> */}
-                   <UserButton />
+                   <MiniProfile />
+                   {/* <UserButton /> */}
                 </SignedIn>
 
             </div>
