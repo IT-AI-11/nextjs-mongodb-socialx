@@ -5,18 +5,19 @@
 'use client';
 
 
-import { useUser } from '@clerk/nextjs'; // it comes from Clerk, user
+import { useUser } from '@clerk/nextjs'; // user data comes from Clerk
 import { HiOutlinePhotograph } from 'react-icons/hi';
 
 
 // component Input.jsx
 export default function Input() {
-    const { user, isSignedIn, isLoaded } = useUser();
+
+    const { user, isSignedIn, isLoaded } = useUser();// user data comes from Clerk
   
     if (!isSignedIn || !isLoaded) {
       return null;
     }
-    
+
     return (
       <div className='flex border-b border-gray-200 p-3 space-x-3 w-full'>
         <img
