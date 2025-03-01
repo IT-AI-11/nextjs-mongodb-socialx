@@ -23,7 +23,9 @@ export default function Input() {
     }
 
     const handleSubmit = async () => {
+
         setPostLoading(true);
+
         const response = await fetch('/api/post/create', {
           method: 'POST',
           headers: {
@@ -34,8 +36,8 @@ export default function Input() {
             userMongoId: user.publicMetadata.userMongoId,
             name: user.fullName,
             username: user.username,
-            //text,
-            text: user.text,
+            text,
+            //text: user.text,
             profileImg: user.imageUrl,
             //image: imageFileUrl,
           }),
