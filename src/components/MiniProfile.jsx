@@ -9,7 +9,7 @@ import { UserButton, useUser } from '@clerk/nextjs';
 import { HiDotsHorizontal } from 'react-icons/hi';
 
 export default function MiniProfile() {
-    
+
   const { user } = useUser();
 
   if (!user) {
@@ -25,6 +25,12 @@ export default function MiniProfile() {
         <p className='text-gray-500 text-sm truncate'>
           @{user && user.username}
         </p>
+        <img
+          // image from Clerk user
+          src={user.imageUrl}
+          alt='user-img'
+          className='h-11 w-11 rounded-full cursor-pointer hover:brightness-95 object-cover'
+        />
       </div>
       <HiDotsHorizontal className='h-3 w-3 hidden xl:inline' />
     </div>
