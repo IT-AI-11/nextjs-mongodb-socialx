@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^5.7.0",
+    "moment": "^2.30.1",
     "mongodb": "^6.14.0",
     "mongoose": "^8.11.0",
     "next": "15.1.7",

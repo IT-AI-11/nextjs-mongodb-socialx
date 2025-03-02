@@ -22,14 +22,14 @@ const postSchema = new mongoose.Schema(
     //   type: String,
     //   required: true,
     // },
-    // username: {
-    //   type: String,
-    //   required: true,
-    // },
-    // profileImg: {
-    //   type: String,
-    //   required: true,
-    // },
+    username: {
+      type: String,
+      required: true,
+    },
+    profileImg: {
+      type: String,
+      required: true,
+    },
     // likes: {
     //   type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
     //   default: [],

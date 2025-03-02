@@ -30,9 +30,9 @@ export const POST = async (req) => {
     const newPost = await Post.create({
       user: data.userMongoId,
       //name: data.name,
-      //username: data.username,
+      username: data.username,
       text: data.text,
-      //profileImg: data.profileImg,
+      profileImg: data.profileImg,
       //image: data.image,
     });
     await newPost.save();

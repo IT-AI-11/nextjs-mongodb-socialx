@@ -32,10 +32,10 @@ export default function Input() {
           body: JSON.stringify({
             userMongoId: user.publicMetadata.userMongoId,
             //name: user.fullName,
-            //username: user.username,
+            username: user.username,
             text,
             //text: user.text,
-            //profileImg: user.imageUrl,
+            profileImg: user.imageUrl,
             //image: imageFileUrl,
           }),
         });

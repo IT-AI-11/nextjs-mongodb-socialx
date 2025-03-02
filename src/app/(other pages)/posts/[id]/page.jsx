@@ -2,12 +2,12 @@
 
 
 
-import React from 'react'
+//import React from 'react'
 
 export default function PostPage() {
   return (
     <div>
-      Posts
+      the single Post that you CLICKED
     </div>
   )
 }

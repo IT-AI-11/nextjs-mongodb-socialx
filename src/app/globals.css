@@ -19,3 +19,23 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+.HOME-test {
+  padding: 20px;
+  border: 5px solid salmon;
+}
+.FEED-test{
+  padding: 10px;
+  border: 5px solid lawngreen;
+}
+.POST-test{
+  padding: 10px;
+  border: 5px solid rgb(42, 24, 232);
+}
+
+.posts-from-DB{
+  padding: 10px;
+  border: 5px dotted firebrick;
+}
