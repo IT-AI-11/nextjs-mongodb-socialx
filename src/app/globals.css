@@ -34,6 +34,11 @@ body {
   padding: 10px;
   border: 5px solid rgb(42, 24, 232);
 }
+.ICONS-test{
+  width: fit-content;
+  padding: 5px 10px;
+  border: 5px solid rgb(5, 108, 21);
+}
 
 .posts-from-DB{
   padding: 10px;
