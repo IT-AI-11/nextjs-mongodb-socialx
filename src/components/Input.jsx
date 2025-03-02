@@ -23,7 +23,7 @@ export default function Input() {
 
         setPostLoading(true);
 
-        const response = await fetch('/api/post/create', {
+        const response = await fetch('http://localhost:3000/api/post/create', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

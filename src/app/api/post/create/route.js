@@ -36,9 +36,7 @@ export const POST = async (req) => {
       //image: data.image,
     });
     await newPost.save();
-    return new Response(JSON.stringify(newPost), {
-      status: 200,
-    });
+    return new Response(JSON.stringify(newPost), {message: "post created"}, {status: 200 });
 
   } catch (error) {
     console.log('Error creating post:', error);
